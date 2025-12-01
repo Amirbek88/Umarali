@@ -1,0 +1,61 @@
+    body {
+        margin: 0;
+        background: #000;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+    
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        text-align: center;
+    }
+    
+    button {
+        padding: 15px 30px;
+        font-size: 18px;
+        background: red;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    button:hover {
+        background: darkred;
+    }
+    
+    #message {
+        font-size: 22px;
+        max-width: 300px;
+        line-height: 1.4;
+    }
+    /* Мобильная адаптация для style.css */
+    
+    @media (max-width: 600px) {
+        body {
+            font-size: 16px;
+        }
+        .container {
+            gap: 15px;
+            padding: 10px;
+        }
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border-radius: 8px;
+        }
+        #message img {
+            width: 100%;
+            max-width: 300px;
+        }
+        #message div {
+            font-size: 18px;
+            line-height: 1.4;
+        }
+    }
